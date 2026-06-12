@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrderService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">boutique-bdd</a> &gt; <a href="index.source.html" class="el_package">boutique.service</a> &gt; <span class="el_source">OrderService.java</span></div><h1>OrderService.java</h1><pre class="source lang-java linenums">package boutique.service;
+
+import boutique.model.Order;
+import boutique.model.Product;
+import boutique.repository.OrderRepository;
+import boutique.repository.ProductRepository;
+
+public class OrderService {
+    private final OrderRepository orderRepository;
+    private final ProductRepository productRepository;
+
+<span class="fc" id="L12">    public OrderService(OrderRepository orderRepository, ProductRepository productRepository) {</span>
+<span class="fc" id="L13">        this.orderRepository = orderRepository;</span>
+<span class="fc" id="L14">        this.productRepository = productRepository;</span>
+<span class="fc" id="L15">    }</span>
+
+    public String addProduct(String orderId, String productId) {
+<span class="fc" id="L18">        Order order = orderRepository.findById(orderId)</span>
+<span class="fc" id="L19">                .orElseThrow(() -&gt; new IllegalStateException(&quot;Commande introuvable&quot;));</span>
+<span class="fc" id="L20">        Product product = productRepository.findById(productId)</span>
+<span class="pc" id="L21">                .orElseThrow(() -&gt; new IllegalArgumentException(&quot;Produit introuvable&quot;));</span>
+<span class="fc" id="L22">        order.addProduct(product);</span>
+<span class="fc" id="L23">        orderRepository.save(order);</span>
+<span class="fc" id="L24">        return &quot;Produit ajouté à la commande&quot;;</span>
+    }
+
+    public String removeProduct(String orderId, String productId) {
+<span class="fc" id="L28">        Order order = orderRepository.findById(orderId)</span>
+<span class="fc" id="L29">                .orElseThrow(() -&gt; new IllegalStateException(&quot;Commande introuvable&quot;));</span>
+<span class="fc" id="L30">        order.removeProduct(productId);</span>
+<span class="fc" id="L31">        orderRepository.save(order);</span>
+<span class="fc" id="L32">        return &quot;Produit retiré de la commande&quot;;</span>
+    }
+
+    public String validateOrder(String orderId) {
+<span class="fc" id="L36">        Order order = orderRepository.findById(orderId)</span>
+<span class="fc" id="L37">                .orElseThrow(() -&gt; new IllegalStateException(&quot;Commande introuvable&quot;));</span>
+<span class="fc" id="L38">        order.validate();</span>
+<span class="fc" id="L39">        orderRepository.save(order);</span>
+<span class="fc" id="L40">        return &quot;Commande validée&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

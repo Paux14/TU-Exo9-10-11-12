@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Order.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">boutique-bdd</a> &gt; <a href="index.source.html" class="el_package">boutique.model</a> &gt; <span class="el_source">Order.java</span></div><h1>Order.java</h1><pre class="source lang-java linenums">package boutique.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Order {
+    private final String id;
+<span class="fc" id="L8">    private final List&lt;OrderItem&gt; items = new ArrayList&lt;&gt;();</span>
+    private boolean validated;
+
+<span class="fc" id="L11">    public Order(String id) {</span>
+<span class="fc" id="L12">        this.id = id;</span>
+<span class="fc" id="L13">    }</span>
+
+<span class="nc" id="L15">    public String getId()            { return id; }</span>
+<span class="nc" id="L16">    public boolean isValidated()     { return validated; }</span>
+<span class="nc" id="L17">    public List&lt;OrderItem&gt; getItems(){ return items; }</span>
+
+    public void addProduct(Product product) {
+<span class="fc" id="L20">        items.stream()</span>
+<span class="fc" id="L21">                .filter(item -&gt; item.getProduct().getId().equals(product.getId()))</span>
+<span class="fc" id="L22">                .findFirst()</span>
+<span class="fc" id="L23">                .ifPresentOrElse(</span>
+                        OrderItem::increment,
+<span class="fc" id="L25">                        () -&gt; items.add(new OrderItem(product, 1))</span>
+                );
+<span class="fc" id="L27">    }</span>
+
+    public void removeProduct(String productId) {
+<span class="fc" id="L30">        OrderItem item = items.stream()</span>
+<span class="fc" id="L31">                .filter(i -&gt; i.getProduct().getId().equals(productId))</span>
+<span class="fc" id="L32">                .findFirst()</span>
+<span class="fc" id="L33">                .orElseThrow(() -&gt; new IllegalArgumentException(&quot;Produit absent de la commande&quot;));</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (item.getQuantity() &gt; 1) {</span>
+<span class="fc" id="L35">            item.decrement();</span>
+        } else {
+<span class="fc" id="L37">            items.remove(item);</span>
+        }
+<span class="fc" id="L39">    }</span>
+
+    public void validate() {
+<span class="fc" id="L42">        this.validated = true;</span>
+<span class="fc" id="L43">    }</span>
+
+    public int getQuantityOf(String productId) {
+<span class="fc" id="L46">        return items.stream()</span>
+<span class="fc" id="L47">                .filter(item -&gt; item.getProduct().getId().equals(productId))</span>
+<span class="fc" id="L48">                .mapToInt(OrderItem::getQuantity)</span>
+<span class="fc" id="L49">                .findFirst()</span>
+<span class="fc" id="L50">                .orElse(0);</span>
+    }
+
+    public boolean containsProduct(String productId) {
+<span class="pc" id="L54">        return items.stream().anyMatch(item -&gt; item.getProduct().getId().equals(productId));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

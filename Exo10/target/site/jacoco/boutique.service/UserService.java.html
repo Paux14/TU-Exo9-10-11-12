@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">boutique-bdd</a> &gt; <a href="index.source.html" class="el_package">boutique.service</a> &gt; <span class="el_source">UserService.java</span></div><h1>UserService.java</h1><pre class="source lang-java linenums">package boutique.service;
+
+import boutique.model.User;
+import boutique.repository.UserRepository;
+
+public class UserService {
+    private final UserRepository userRepository;
+
+<span class="fc" id="L9">    public UserService(UserRepository userRepository) {</span>
+<span class="fc" id="L10">        this.userRepository = userRepository;</span>
+<span class="fc" id="L11">    }</span>
+
+    public String createAccount(String username, String email, String password) {
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (userRepository.existsByUsername(username)) {</span>
+<span class="fc" id="L15">            throw new IllegalArgumentException(&quot;Un compte avec ce nom d'utilisateur existe déjà&quot;);</span>
+        }
+<span class="fc" id="L17">        userRepository.save(new User(username, email, password));</span>
+<span class="fc" id="L18">        return &quot;Compte créé avec succès&quot;;</span>
+    }
+
+    public String login(String username, String password) {
+<span class="fc" id="L22">        return userRepository.findByUsername(username)</span>
+<span class="fc" id="L23">                .filter(u -&gt; u.getPassword().equals(password))</span>
+<span class="fc" id="L24">                .map(u -&gt; &quot;Connexion réussie&quot;)</span>
+<span class="fc" id="L25">                .orElseThrow(() -&gt; new IllegalArgumentException(&quot;Identifiants invalides&quot;));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

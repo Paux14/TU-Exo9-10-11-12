@@ -1,0 +1,4 @@
+boutique\steps\AccountStepDefinitions.class
+boutique\CucumberRunnerTest.class
+boutique\steps\ProductStepDefinitions.class
+boutique\steps\OrderStepDefinitions.class

@@ -1,0 +1,10 @@
+boutique\repository\UserRepository.class
+boutique\model\Product.class
+boutique\service\OrderService.class
+boutique\service\UserService.class
+boutique\repository\ProductRepository.class
+boutique\service\ProductService.class
+boutique\model\Order.class
+boutique\model\OrderItem.class
+boutique\model\User.class
+boutique\repository\OrderRepository.class

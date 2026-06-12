@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.707" tests="16" skipped="0" failures="0" errors="0">
+<testcase classname="Création de compte" name="Inscription réussie avec des informations valides" time="5.708">
+<system-out><![CDATA[
+Given un formulaire d'inscription est disponible............................passed
+When l'utilisateur s'inscrit avec l'email "alice@example.com", le nom "alice" et le mot de passe "pass123".passed
+Then l'utilisateur reçoit une confirmation d'inscription....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Création de compte" name="Échec de l'inscription avec un nom d'utilisateur déjà existant" time="0.034">
+<system-out><![CDATA[
+Given un utilisateur "alice" est déjà enregistré............................passed
+When l'utilisateur tente de s'inscrire avec le nom "alice"..................passed
+Then une erreur indique que le compte existe déjà...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajout de produit à une commande" name="Ajout d'un nouveau produit à une commande existante" time="0.116">
+<system-out><![CDATA[
+Given une commande "order-1" existe.........................................passed
+And un produit "prod-1" existe..............................................passed
+When l'utilisateur ajoute le produit "prod-1" à la commande "order-1".......passed
+Then l'utilisateur reçoit une confirmation d'ajout..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajout de produit à une commande" name="Ajout d'un produit déjà présent augmente la quantité" time="0.058">
+<system-out><![CDATA[
+Given une commande "order-1" contient le produit "prod-1" en quantité 1.....passed
+And un produit "prod-1" existe..............................................passed
+When l'utilisateur ajoute le produit "prod-1" à la commande "order-1".......passed
+Then la quantité du produit "prod-1" dans la commande est de 2..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajout de produit à une commande" name="Ajout à une commande inexistante retourne une erreur" time="0.011">
+<system-out><![CDATA[
+Given aucune commande "order-x" n'existe....................................passed
+When l'utilisateur tente d'ajouter le produit "prod-1" à la commande "order-x".passed
+Then une erreur indique que la commande n'existe pas........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation par catégorie" name="Accès aux produits d'une catégorie existante" time="0.024">
+<system-out><![CDATA[
+Given des produits dans la catégorie "Électronique".........................passed
+When l'utilisateur sélectionne la catégorie "Électronique"..................passed
+Then l'utilisateur voit les produits de la catégorie "Électronique".........passed
+]]></system-out>
+</testcase>
+<testcase classname="Connexion" name="Connexion réussie avec des identifiants valides" time="0.018">
+<system-out><![CDATA[
+Given un utilisateur "bob" existe avec le mot de passe "secret".............passed
+When l'utilisateur se connecte avec "bob" et "secret".......................passed
+Then l'utilisateur est redirigé vers la page d'accueil......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Connexion" name="Connexion échouée avec un mauvais mot de passe" time="0.014">
+<system-out><![CDATA[
+Given un utilisateur "bob" existe avec le mot de passe "secret".............passed
+When l'utilisateur se connecte avec "bob" et "wrongpass"....................passed
+Then l'utilisateur voit un message d'erreur de connexion....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Recherche de produits" name="Recherche par mot-clé retourne des résultats" time="0.024">
+<system-out><![CDATA[
+Given des produits correspondant au mot-clé "clavier".......................passed
+When l'utilisateur recherche "clavier"......................................passed
+Then l'utilisateur voit une liste de produits...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Recherche de produits" name="Recherche par prix maximum" time="0.136">
+<system-out><![CDATA[
+Given des produits disponibles à moins de 50.0 euros........................passed
+When l'utilisateur recherche des produits avec un prix maximum de 50.0......passed
+Then l'utilisateur voit une liste de produits filtrés par prix..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Suppression de produit d'une commande" name="Diminution de la quantité si quantité supérieure à 1" time="0.032">
+<system-out><![CDATA[
+Given une commande "order-1" contient le produit "prod-1" en quantité 2.....passed
+When l'utilisateur supprime le produit "prod-1" de la commande "order-1"....passed
+Then la quantité du produit "prod-1" dans la commande est de 1..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Suppression de produit d'une commande" name="Retrait du produit si quantité égale à 1" time="0.016">
+<system-out><![CDATA[
+Given une commande "order-1" contient le produit "prod-1" en quantité 1.....passed
+When l'utilisateur supprime le produit "prod-1" de la commande "order-1"....passed
+Then le produit "prod-1" n'est plus dans la commande........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Suppression de produit d'une commande" name="Suppression d'un produit absent retourne une erreur" time="0.022">
+<system-out><![CDATA[
+Given une commande "order-1" existe sans le produit "prod-x"................passed
+When l'utilisateur tente de supprimer le produit "prod-x" de la commande "order-1".passed
+Then une erreur indique que le produit n'est pas dans la commande...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Suppression de produit d'une commande" name="Suppression dans une commande inexistante retourne une erreur" time="0.012">
+<system-out><![CDATA[
+Given aucune commande "order-x" n'existe....................................passed
+When l'utilisateur tente de supprimer le produit "prod-1" de la commande "order-x".passed
+Then une erreur indique que la commande n'existe pas........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validation de commande" name="Validation réussie d'une commande existante" time="0.016">
+<system-out><![CDATA[
+Given une commande "order-1" existe.........................................passed
+When l'utilisateur valide la commande "order-1".............................passed
+Then l'utilisateur reçoit une confirmation de validation....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validation de commande" name="Validation d'une commande inexistante retourne une erreur" time="0.021">
+<system-out><![CDATA[
+Given aucune commande "order-x" n'existe....................................passed
+When l'utilisateur tente de valider la commande "order-x"...................passed
+Then une erreur indique que la commande n'existe pas........................passed
+]]></system-out>
+</testcase>
+</testsuite>

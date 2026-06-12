@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="boutique.CucumberRunnerTest" time="10.635" tests="16" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10\target\test-classes;C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10\target\classes;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite\1.10.2\junit-platform-suite-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.2\junit-platform-suite-api-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.2\junit-platform-suite-engine-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.2\junit-platform-suite-commons-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.2\junit-platform-launcher-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Ulysse\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Ulysse\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.0\cucumber-junit-platform-engine-7.18.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Ulysse\AppData\Local\Temp\surefire9608544270511682447\surefirebooter-20260612114254756_3.jar C:\Users\Ulysse\AppData\Local\Temp\surefire9608544270511682447 2026-06-12T11-42-54_207-jvmRun1 surefire-20260612114254756_1tmp surefire_0-20260612114254756_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10\target\test-classes;C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10\target\classes;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite\1.10.2\junit-platform-suite-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.2\junit-platform-suite-api-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.2\junit-platform-suite-engine-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.2\junit-platform-suite-commons-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.2\junit-platform-launcher-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Ulysse\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Ulysse\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.0\cucumber-junit-platform-engine-7.18.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Ulysse"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ulysse\AppData\Local\Temp\surefire9608544270511682447\surefirebooter-20260612114254756_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS"/>
+    <property name="user.name" value="Ulysse"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-13053607"/>
+    <property name="localRepository" value="C:\Users\Ulysse\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ulysse\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\Users\Ulysse\Downloads\TU Exo9-10\Exo10"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\Ulysse\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Ulysse\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-21.0.10;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Ulysse\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Git\cmd;C:\Users\Ulysse\AppData\Local\pnpm;C:\Users\Ulysse\AppData\Local\Microsoft\PowerAppsCLI\;C:\Users\Ulysse\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Ulysse\AppData\Local\Programs\Python\Python313\;C:\Users\Ulysse\AppData\Local\Microsoft\WindowsApps;C:\Users\Ulysse\.dotnet\tools;C:\Users\Ulysse\AppData\Local\GitHubDesktop\bin;C:\Users\Ulysse\AppData\Roaming\npm;C:\Users\Ulysse\AppData\Local\nvm;C:\nvm4w\nodejs;C:\apache-maven-3.9.11\bin;;C:\Users\Ulysse\.deno\bin;C:\Users\Ulysse\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Inscription réussie avec des informations valides" classname="Création de compte" time="6.146">
+    <system-out><![CDATA[
+Scenario: Inscription réussie avec des informations valides                                                  &amp#27;[90m# features/account_creation.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun formulaire d'inscription est disponible&amp#27;[0m                                                           &amp#27;[90m# boutique.steps.AccountStepDefinitions.formulaireDisponible()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur s'inscrit avec l'email &amp#27;[0m&amp#27;[32m&amp#27;[1m"alice@example.com"&amp#27;[0m&amp#27;[32m, le nom &amp#27;[0m&amp#27;[32m&amp#27;[1m"alice"&amp#27;[0m&amp#27;[32m et le mot de passe &amp#27;[0m&amp#27;[32m&amp#27;[1m"pass123"&amp#27;[0m &amp#27;[90m# boutique.steps.AccountStepDefinitions.inscription(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur reçoit une confirmation d'inscription&amp#27;[0m                                                   &amp#27;[90m# boutique.steps.AccountStepDefinitions.confirmationInscription()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting javax/lang/model/SourceVersion with JaCoCo 0.8.12.202403310830/dbfb6f2.
+	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:608)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at io.cucumber.core.resource.ClasspathSupport.requireValidPackageName(ClasspathSupport.java:41)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:49)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:56)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runBeforeAllHooks(CucumberEngineExecutionContext.java:101)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.ifChildren(CucumberEngineDescriptor.java:63)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.before(CucumberEngineDescriptor.java:38)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.before(CucumberEngineDescriptor.java:12)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:76)
+	at org.junit.platform.suite.engine.SuiteLauncher.execute(SuiteLauncher.java:63)
+	at org.junit.platform.suite.engine.SuiteTestDescriptor.execute(SuiteTestDescriptor.java:128)
+	at org.junit.platform.suite.engine.SuiteTestEngine.lambda$execute$0(SuiteTestEngine.java:73)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.platform.suite.engine.SuiteTestEngine.execute(SuiteTestEngine.java:73)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: Error while instrumenting javax/lang/model/SourceVersion with JaCoCo 0.8.12.202403310830/dbfb6f2.
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:111)
+	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:200)
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:77)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:109)
+	... 84 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/sun/tools/attach/VirtualMachine with JaCoCo 0.8.12.202403310830/dbfb6f2.
+	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:547)
+	at net.bytebuddy.agent.ByteBuddyAgent$AttachmentProvider$Accessor$Simple.of(ByteBuddyAgent.java:969)
+	at net.bytebuddy.agent.ByteBuddyAgent$AttachmentProvider$ForModularizedVm.attempt(ByteBuddyAgent.java:1093)
+	at net.bytebuddy.agent.ByteBuddyAgent$AttachmentProvider$Compound.attempt(ByteBuddyAgent.java:1273)
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:630)
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:616)
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:568)
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:545)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:133)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1683)
+	at boutique.steps.AccountStepDefinitions.setUp(AccountStepDefinitions.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:112)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:76)
+	at org.junit.platform.suite.engine.SuiteLauncher.execute(SuiteLauncher.java:63)
+	at org.junit.platform.suite.engine.SuiteTestDescriptor.execute(SuiteTestDescriptor.java:128)
+	at org.junit.platform.suite.engine.SuiteTestEngine.lambda$execute$0(SuiteTestEngine.java:73)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.platform.suite.engine.SuiteTestEngine.execute(SuiteTestEngine.java:73)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: Error while instrumenting com/sun/tools/attach/VirtualMachine with JaCoCo 0.8.12.202403310830/dbfb6f2.
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:111)
+	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 120 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:200)
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.jacoco.agent.rt.internal_aeaf9ab.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:77)
+	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:109)
+	... 121 more
+WARNING: A Java agent has been loaded dynamically (C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="Échec de l&apos;inscription avec un nom d&apos;utilisateur déjà existant" classname="Création de compte" time="0.115">
+    <system-out><![CDATA[
+Scenario: Échec de l'inscription avec un nom d'utilisateur déjà existant &amp#27;[90m# features/account_creation.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun utilisateur &amp#27;[0m&amp#27;[32m&amp#27;[1m"alice"&amp#27;[0m&amp#27;[32m est déjà enregistré&amp#27;[0m                       &amp#27;[90m# boutique.steps.AccountStepDefinitions.utilisateurDejaEnregistre(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur tente de s'inscrire avec le nom &amp#27;[0m&amp#27;[32m&amp#27;[1m"alice"&amp#27;[0m             &amp#27;[90m# boutique.steps.AccountStepDefinitions.tentativeInscription(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mune erreur indique que le compte existe déjà&amp#27;[0m                      &amp#27;[90m# boutique.steps.AccountStepDefinitions.erreurCompteExistant()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Ajout d&apos;un nouveau produit à une commande existante" classname="Ajout de produit à une commande" time="0.19">
+    <system-out><![CDATA[
+Scenario: Ajout d'un nouveau produit à une commande existante           &amp#27;[90m# features/add_to_order.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m existe&amp#27;[0m                                   &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeExiste(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m existe&amp#27;[0m                                        &amp#27;[90m# boutique.steps.OrderStepDefinitions.produitExiste(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur ajoute le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m à la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.ajouterProduit(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur reçoit une confirmation d'ajout&amp#27;[0m                    &amp#27;[90m# boutique.steps.OrderStepDefinitions.confirmationAjout()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Ajout d&apos;un produit déjà présent augmente la quantité" classname="Ajout de produit à une commande" time="0.102">
+    <system-out><![CDATA[
+Scenario: Ajout d'un produit déjà présent augmente la quantité            &amp#27;[90m# features/add_to_order.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m contient le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m en quantité &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeContientProduit(java.lang.String,java.lang.String,int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m existe&amp#27;[0m                                          &amp#27;[90m# boutique.steps.OrderStepDefinitions.produitExiste(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur ajoute le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m à la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m   &amp#27;[90m# boutique.steps.OrderStepDefinitions.ajouterProduit(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla quantité du produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m dans la commande est de &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m          &amp#27;[90m# boutique.steps.OrderStepDefinitions.quantiteProduit(java.lang.String,int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Ajout à une commande inexistante retourne une erreur" classname="Ajout de produit à une commande" time="0.046">
+    <system-out><![CDATA[
+Scenario: Ajout à une commande inexistante retourne une erreur                   &amp#27;[90m# features/add_to_order.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32maucune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m&amp#27;[32m n'existe&amp#27;[0m                                       &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeInexistante(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur tente d'ajouter le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m à la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.tentativeAjout(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mune erreur indique que la commande n'existe pas&amp#27;[0m                           &amp#27;[90m# boutique.steps.OrderStepDefinitions.erreurCommandeInexistante()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Accès aux produits d&apos;une catégorie existante" classname="Navigation par catégorie" time="0.045">
+    <system-out><![CDATA[
+Scenario: Accès aux produits d'une catégorie existante                &amp#27;[90m# features/category_browse.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mdes produits dans la catégorie &amp#27;[0m&amp#27;[32m&amp#27;[1m"Électronique"&amp#27;[0m                 &amp#27;[90m# boutique.steps.ProductStepDefinitions.produitsParCategorie(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur sélectionne la catégorie &amp#27;[0m&amp#27;[32m&amp#27;[1m"Électronique"&amp#27;[0m          &amp#27;[90m# boutique.steps.ProductStepDefinitions.selectionnerCategorie(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur voit les produits de la catégorie &amp#27;[0m&amp#27;[32m&amp#27;[1m"Électronique"&amp#27;[0m &amp#27;[90m# boutique.steps.ProductStepDefinitions.voitProduitsCategorie(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Connexion réussie avec des identifiants valides" classname="Connexion" time="0.041">
+    <system-out><![CDATA[
+Scenario: Connexion réussie avec des identifiants valides         &amp#27;[90m# features/login.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun utilisateur &amp#27;[0m&amp#27;[32m&amp#27;[1m"bob"&amp#27;[0m&amp#27;[32m existe avec le mot de passe &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret"&amp#27;[0m &amp#27;[90m# boutique.steps.AccountStepDefinitions.utilisateurExiste(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur se connecte avec &amp#27;[0m&amp#27;[32m&amp#27;[1m"bob"&amp#27;[0m&amp#27;[32m et &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret"&amp#27;[0m           &amp#27;[90m# boutique.steps.AccountStepDefinitions.connexion(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur est redirigé vers la page d'accueil&amp#27;[0m          &amp#27;[90m# boutique.steps.AccountStepDefinitions.redirectionAccueil()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Connexion échouée avec un mauvais mot de passe" classname="Connexion" time="0.075">
+    <system-out><![CDATA[
+Scenario: Connexion échouée avec un mauvais mot de passe          &amp#27;[90m# features/login.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun utilisateur &amp#27;[0m&amp#27;[32m&amp#27;[1m"bob"&amp#27;[0m&amp#27;[32m existe avec le mot de passe &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret"&amp#27;[0m &amp#27;[90m# boutique.steps.AccountStepDefinitions.utilisateurExiste(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur se connecte avec &amp#27;[0m&amp#27;[32m&amp#27;[1m"bob"&amp#27;[0m&amp#27;[32m et &amp#27;[0m&amp#27;[32m&amp#27;[1m"wrongpass"&amp#27;[0m        &amp#27;[90m# boutique.steps.AccountStepDefinitions.connexion(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur voit un message d'erreur de connexion&amp#27;[0m        &amp#27;[90m# boutique.steps.AccountStepDefinitions.erreurConnexion()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Recherche par mot-clé retourne des résultats" classname="Recherche de produits" time="0.052">
+    <system-out><![CDATA[
+Scenario: Recherche par mot-clé retourne des résultats  &amp#27;[90m# features/product_search.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mdes produits correspondant au mot-clé &amp#27;[0m&amp#27;[32m&amp#27;[1m"clavier"&amp#27;[0m &amp#27;[90m# boutique.steps.ProductStepDefinitions.produitsParMotCle(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur recherche &amp#27;[0m&amp#27;[32m&amp#27;[1m"clavier"&amp#27;[0m                &amp#27;[90m# boutique.steps.ProductStepDefinitions.rechercheMotCle(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur voit une liste de produits&amp#27;[0m         &amp#27;[90m# boutique.steps.ProductStepDefinitions.voitListeProduits()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Recherche par prix maximum" classname="Recherche de produits" time="0.166">
+    <system-out><![CDATA[
+Scenario: Recherche par prix maximum                                     &amp#27;[90m# features/product_search.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mdes produits disponibles à moins de &amp#27;[0m&amp#27;[32m&amp#27;[1m50.0&amp#27;[0m&amp#27;[32m euros&amp#27;[0m                   &amp#27;[90m# boutique.steps.ProductStepDefinitions.produitsParPrix(double)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur recherche des produits avec un prix maximum de &amp#27;[0m&amp#27;[32m&amp#27;[1m50.0&amp#27;[0m &amp#27;[90m# boutique.steps.ProductStepDefinitions.rechercheParPrix(double)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur voit une liste de produits filtrés par prix&amp#27;[0m         &amp#27;[90m# boutique.steps.ProductStepDefinitions.voitListeFiltrePrix()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Diminution de la quantité si quantité supérieure à 1" classname="Suppression de produit d&apos;une commande" time="0.062">
+    <system-out><![CDATA[
+Scenario: Diminution de la quantité si quantité supérieure à 1             &amp#27;[90m# features/remove_from_order.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m contient le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m en quantité &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m  &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeContientProduit(java.lang.String,java.lang.String,int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur supprime le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m de la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.supprimerProduit(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla quantité du produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m dans la commande est de &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m           &amp#27;[90m# boutique.steps.OrderStepDefinitions.quantiteProduit(java.lang.String,int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Retrait du produit si quantité égale à 1" classname="Suppression de produit d&apos;une commande" time="0.042">
+    <system-out><![CDATA[
+Scenario: Retrait du produit si quantité égale à 1                         &amp#27;[90m# features/remove_from_order.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m contient le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m en quantité &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m  &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeContientProduit(java.lang.String,java.lang.String,int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur supprime le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m de la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.supprimerProduit(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mle produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m n'est plus dans la commande&amp#27;[0m                     &amp#27;[90m# boutique.steps.OrderStepDefinitions.produitPlusPresent(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Suppression d&apos;un produit absent retourne une erreur" classname="Suppression de produit d&apos;une commande" time="0.05">
+    <system-out><![CDATA[
+Scenario: Suppression d'un produit absent retourne une erreur                        &amp#27;[90m# features/remove_from_order.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m existe sans le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-x"&amp#27;[0m                       &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeExisteSansProduit(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur tente de supprimer le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-x"&amp#27;[0m&amp#27;[32m de la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.tentativeSuppression(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mune erreur indique que le produit n'est pas dans la commande&amp#27;[0m                  &amp#27;[90m# boutique.steps.OrderStepDefinitions.erreurProduitAbsent()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Suppression dans une commande inexistante retourne une erreur" classname="Suppression de produit d&apos;une commande" time="0.032">
+    <system-out><![CDATA[
+Scenario: Suppression dans une commande inexistante retourne une erreur              &amp#27;[90m# features/remove_from_order.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32maucune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m&amp#27;[32m n'existe&amp#27;[0m                                           &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeInexistante(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur tente de supprimer le produit &amp#27;[0m&amp#27;[32m&amp#27;[1m"prod-1"&amp#27;[0m&amp#27;[32m de la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.tentativeSuppression(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mune erreur indique que la commande n'existe pas&amp#27;[0m                               &amp#27;[90m# boutique.steps.OrderStepDefinitions.erreurCommandeInexistante()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validation réussie d&apos;une commande existante" classname="Validation de commande" time="0.041">
+    <system-out><![CDATA[
+Scenario: Validation réussie d'une commande existante      &amp#27;[90m# features/validate_order.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m&amp#27;[32m existe&amp#27;[0m                      &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeExiste(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur valide la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-1"&amp#27;[0m          &amp#27;[90m# boutique.steps.OrderStepDefinitions.validerCommande(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur reçoit une confirmation de validation&amp#27;[0m &amp#27;[90m# boutique.steps.OrderStepDefinitions.confirmationValidation()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validation d&apos;une commande inexistante retourne une erreur" classname="Validation de commande" time="0.053">
+    <system-out><![CDATA[
+Scenario: Validation d'une commande inexistante retourne une erreur &amp#27;[90m# features/validate_order.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32maucune commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m&amp#27;[32m n'existe&amp#27;[0m                          &amp#27;[90m# boutique.steps.OrderStepDefinitions.commandeInexistante(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ml'utilisateur tente de valider la commande &amp#27;[0m&amp#27;[32m&amp#27;[1m"order-x"&amp#27;[0m         &amp#27;[90m# boutique.steps.OrderStepDefinitions.tentativeValidation(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mune erreur indique que la commande n'existe pas&amp#27;[0m              &amp#27;[90m# boutique.steps.OrderStepDefinitions.erreurCommandeInexistante()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
