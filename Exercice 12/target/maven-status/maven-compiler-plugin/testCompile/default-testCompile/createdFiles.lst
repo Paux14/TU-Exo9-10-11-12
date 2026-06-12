@@ -1,0 +1,6 @@
+rooms\controller\ReservationControllerTest.class
+rooms\controller\RoomControllerTest.class
+rooms\service\ReservationServiceTest.class
+rooms\bdd\CucumberRunnerTest.class
+rooms\bdd\steps\ReservationStepDefinitions.class
+rooms\integration\RoomsIntegrationTest.class

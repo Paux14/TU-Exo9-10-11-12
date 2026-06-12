@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservationService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rooms-api</a> &gt; <a href="index.source.html" class="el_package">rooms.service</a> &gt; <span class="el_source">ReservationService.java</span></div><h1>ReservationService.java</h1><pre class="source lang-java linenums">package rooms.service;
+
+import org.springframework.stereotype.Service;
+import rooms.exception.AlreadyCancelledException;
+import rooms.exception.InvalidTimeSlotException;
+import rooms.exception.ReservationNotFoundException;
+import rooms.exception.RoomNotFoundException;
+import rooms.exception.TimeSlotConflictException;
+import rooms.model.Reservation;
+import rooms.model.ReservationStatus;
+import rooms.repository.ReservationRepository;
+import rooms.repository.RoomRepository;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Service
+public class ReservationService {
+    private final ReservationRepository reservationRepository;
+    private final RoomRepository roomRepository;
+
+<span class="fc" id="L22">    public ReservationService(ReservationRepository reservationRepository, RoomRepository roomRepository) {</span>
+<span class="fc" id="L23">        this.reservationRepository = reservationRepository;</span>
+<span class="fc" id="L24">        this.roomRepository = roomRepository;</span>
+<span class="fc" id="L25">    }</span>
+
+    public Reservation create(String roomId, String bookerName, LocalDateTime start, LocalDateTime end) {
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (!roomRepository.existsById(roomId)) {</span>
+<span class="fc" id="L29">            throw new RoomNotFoundException(roomId);</span>
+        }
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (!end.isAfter(start)) {</span>
+<span class="fc" id="L32">            throw new InvalidTimeSlotException();</span>
+        }
+<span class="fc" id="L34">        boolean conflict = reservationRepository.findByRoomId(roomId).stream()</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">                .filter(r -&gt; r.getStatus() == ReservationStatus.CONFIRMED)</span>
+<span class="pc bpc" id="L36" title="2 of 4 branches missed.">                .anyMatch(r -&gt; start.isBefore(r.getEnd()) &amp;&amp; end.isAfter(r.getStart()));</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (conflict) {</span>
+<span class="fc" id="L38">            throw new TimeSlotConflictException();</span>
+        }
+<span class="fc" id="L40">        Reservation reservation = new Reservation(UUID.randomUUID().toString(), roomId, bookerName, start, end);</span>
+<span class="fc" id="L41">        return reservationRepository.save(reservation);</span>
+    }
+
+    public Reservation findById(String id) {
+<span class="fc" id="L45">        return reservationRepository.findById(id)</span>
+<span class="fc" id="L46">                .orElseThrow(() -&gt; new ReservationNotFoundException(id));</span>
+    }
+
+    public Reservation cancel(String id) {
+<span class="fc" id="L50">        Reservation reservation = findById(id);</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        if (reservation.getStatus() == ReservationStatus.CANCELLED) {</span>
+<span class="fc" id="L52">            throw new AlreadyCancelledException(id);</span>
+        }
+<span class="fc" id="L54">        reservation.setStatus(ReservationStatus.CANCELLED);</span>
+<span class="fc" id="L55">        return reservationRepository.save(reservation);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

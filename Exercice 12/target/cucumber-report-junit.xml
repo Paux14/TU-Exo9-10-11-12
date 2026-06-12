@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.901" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Réservation de salles de réunion" name="Réservation acceptée quand la salle existe et le créneau est libre" time="0.079">
+<system-out><![CDATA[
+Given une salle "Salle A" de capacité 10 existe.............................passed
+When je réserve cette salle pour "Alice" du "2025-01-15T09:00" au "2025-01-15T10:00".passed
+Then la réservation est créée avec le statut "CONFIRMED"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Réservation de salles de réunion" name="Réservation refusée quand la salle n'existe pas" time="0.023">
+<system-out><![CDATA[
+Given aucune salle n'existe.................................................passed
+When je tente de réserver la salle "id-inexistant" pour "Bob" du "2025-01-15T09:00" au "2025-01-15T10:00".passed
+Then une erreur de salle introuvable est levée..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Réservation de salles de réunion" name="Réservation refusée quand le créneau chevauche une réservation existante" time="0.016">
+<system-out><![CDATA[
+Given une salle "Salle B" de capacité 5 existe..............................passed
+And une réservation existe pour cette salle du "2025-01-15T09:00" au "2025-01-15T11:00".passed
+When je tente de réserver cette salle pour "Charlie" du "2025-01-15T10:00" au "2025-01-15T12:00".passed
+Then une erreur de conflit de créneau est levée.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

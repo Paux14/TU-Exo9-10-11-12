@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservationRepository.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rooms-api</a> &gt; <a href="index.source.html" class="el_package">rooms.repository</a> &gt; <span class="el_source">ReservationRepository.java</span></div><h1>ReservationRepository.java</h1><pre class="source lang-java linenums">package rooms.repository;
+
+import org.springframework.stereotype.Repository;
+import rooms.model.Reservation;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
+
+@Repository
+<span class="fc" id="L14">public class ReservationRepository {</span>
+<span class="fc" id="L15">    private final Map&lt;String, Reservation&gt; store = new ConcurrentHashMap&lt;&gt;();</span>
+
+    public Reservation save(Reservation reservation) {
+<span class="fc" id="L18">        store.put(reservation.getId(), reservation);</span>
+<span class="fc" id="L19">        return reservation;</span>
+    }
+
+    public Optional&lt;Reservation&gt; findById(String id) {
+<span class="fc" id="L23">        return Optional.ofNullable(store.get(id));</span>
+    }
+
+    public List&lt;Reservation&gt; findByRoomId(String roomId) {
+<span class="fc" id="L27">        return store.values().stream()</span>
+<span class="fc" id="L28">                .filter(r -&gt; r.getRoomId().equals(roomId))</span>
+<span class="fc" id="L29">                .collect(Collectors.toList());</span>
+    }
+
+    public void clear() {
+<span class="fc" id="L33">        store.clear();</span>
+<span class="fc" id="L34">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
