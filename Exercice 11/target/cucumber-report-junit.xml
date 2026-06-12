@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.392" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Gestion des tickets de support" name="Création d'un ticket valide" time="0.03">
+<system-out><![CDATA[
+Given aucun ticket n'existe.................................................passed
+When je crée un ticket avec le titre "Problème de connexion" et la priorité "HIGH".passed
+Then le ticket est créé avec le statut "OPEN"...............................passed
+And le ticket possède un identifiant........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des tickets de support" name="Résolution d'un ticket" time="0.005">
+<system-out><![CDATA[
+Given un ticket "Problème réseau" avec la priorité "MEDIUM" a été créé......passed
+When je modifie le statut du ticket à "RESOLVED"............................passed
+Then le statut du ticket est "RESOLVED".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des tickets de support" name="Refus de modification d'un ticket déjà résolu" time="0.009">
+<system-out><![CDATA[
+Given un ticket "Bug critique" avec la priorité "HIGH" a été créé...........passed
+And le ticket a été résolu..................................................passed
+When je tente de modifier le statut du ticket à "IN_PROGRESS"...............passed
+Then une erreur de transition invalide est levée............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des tickets de support" name="Consultation d'un ticket inexistant" time="0.004">
+<system-out><![CDATA[
+Given aucun ticket n'existe.................................................passed
+When je consulte le ticket avec l'identifiant "id-inexistant"...............passed
+Then une erreur de ticket introuvable est levée.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
