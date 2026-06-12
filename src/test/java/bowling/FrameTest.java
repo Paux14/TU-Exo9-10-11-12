@@ -111,9 +111,8 @@ class FrameTest {
 
     @Test
     void shouldAcceptThirdRollWhenLastFrameStartsWithSpare() {
-        when(generateur.randomPin(10)).thenReturn(7);
+        when(generateur.randomPin(10)).thenReturn(7, 5);
         when(generateur.randomPin(3)).thenReturn(3);
-        when(generateur.randomPin(10)).thenReturn(5);
 
         Frame frame = new Frame(generateur, true);
 

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.61" tests="12" skipped="0" failures="0" errors="0">
+<testcase classname="Last Frame" name="Score increases after second roll following strike in last frame" time="0.073">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 2 rolls...............................................passed
+Then the score should be 15.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Second roll accepted after strike in last frame" time="0.008">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 2 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Third roll accepted after strike in last frame" time="0.006">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 3 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Score increases after third roll following strike in last frame" time="0.004">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 3 rolls...............................................passed
+Then the score should be 18.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Third roll accepted after spare in last frame" time="0.005">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 3 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Score increases after third roll following spare in last frame" time="0.006">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 3 rolls...............................................passed
+Then the score should be 15.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Third roll rejected when last frame has no strike or spare" time="0.006">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 2 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+And the next roll should be rejected........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Last Frame" name="Fourth roll rejected in last frame" time="0.008">
+<system-out><![CDATA[
+Given a last frame..........................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 3 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+And the next roll should be rejected........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Standard Frame" name="First roll increases score in standard frame" time="0.015">
+<system-out><![CDATA[
+Given a standard frame......................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 1 roll................................................passed
+Then the score should be 3..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Standard Frame" name="Second roll increases score in standard frame" time="0.004">
+<system-out><![CDATA[
+Given a standard frame......................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 2 rolls...............................................passed
+Then the score should be 7..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Standard Frame" name="Second roll rejected when standard frame starts with strike" time="0.008">
+<system-out><![CDATA[
+Given a standard frame......................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 1 roll................................................passed
+Then roll 1 should have been accepted.......................................passed
+And the next roll should be rejected........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Standard Frame" name="Third roll rejected when standard frame already has two rolls" time="0.008">
+<system-out><![CDATA[
+Given a standard frame......................................................passed
+And the generator is configured as:.........................................passed
+When the player makes 2 rolls...............................................passed
+Then all rolls should have been accepted....................................passed
+And the next roll should be rejected........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
