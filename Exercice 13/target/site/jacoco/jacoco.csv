@@ -1,0 +1,14 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+bank-api,bank,BankApplication,8,0,0,0,3,0,2,0,2,0
+bank-api,bank.repository,AccountRepository,35,0,0,0,7,0,5,0,5,0
+bank-api,bank.exception,AccountAlreadyExistsException,5,0,0,0,2,0,1,0,1,0
+bank-api,bank.exception,InvalidAmountException,5,0,0,0,2,0,1,0,1,0
+bank-api,bank.exception,InsufficientFundsException,7,0,0,0,2,0,1,0,1,0
+bank-api,bank.exception,AccountNotFoundException,5,0,0,0,2,0,1,0,1,0
+bank-api,bank.model,Account,25,0,0,0,9,0,5,0,5,0
+bank-api,bank.controller,GlobalExceptionHandler,23,0,0,0,5,0,5,0,5,0
+bank-api,bank.controller,CreateAccountRequest,9,0,0,0,1,0,1,0,1,0
+bank-api,bank.controller,TransferRequest,12,0,0,0,1,0,1,0,1,0
+bank-api,bank.controller,AccountController,47,0,0,0,10,0,7,0,7,0
+bank-api,bank.controller,AmountRequest,6,0,0,0,1,0,1,0,1,0
+bank-api,bank.service,AccountService,144,0,12,0,32,0,14,0,8,0

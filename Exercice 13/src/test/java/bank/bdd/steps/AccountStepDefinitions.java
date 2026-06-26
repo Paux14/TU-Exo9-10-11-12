@@ -41,11 +41,6 @@ public class AccountStepDefinitions {
         }
     }
 
-    @Et("un compte {string} appartenant à {string} avec un solde de {double}")
-    public void andAccountWithBalance(String number, String owner, double balance) {
-        accountWithBalance(number, owner, balance);
-    }
-
     @Quand("je dépose {double} sur le compte {string}")
     public void deposit(double amount, String number) {
         service.deposit(number, amount);
@@ -54,11 +49,6 @@ public class AccountStepDefinitions {
     @Alors("le solde du compte {string} est de {double}")
     public void balanceIs(String number, double balance) {
         assertThat(service.getAccount(number).getBalance()).isEqualTo(balance);
-    }
-
-    @Et("le solde du compte {string} est de {double}")
-    public void andBalanceIs(String number, double balance) {
-        balanceIs(number, balance);
     }
 
     @Quand("je retire {double} du compte {string}")
