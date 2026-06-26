@@ -1,0 +1,15 @@
+mediacity\model\Reservation.class
+mediacity\MediaCityApplication.class
+mediacity\model\Adherent.class
+mediacity\repository\PretRepository.class
+mediacity\model\Ouvrage.class
+mediacity\exception\PretIntrouvableException.class
+mediacity\exception\AdherentSuspenduException.class
+mediacity\exception\OuvrageIndisponibleException.class
+mediacity\repository\OuvrageRepository.class
+mediacity\repository\AdherentRepository.class
+mediacity\service\PretService.class
+mediacity\model\StatutReservation.class
+mediacity\model\Pret.class
+mediacity\repository\ReservationRepository.class
+mediacity\model\StatutPret.class
