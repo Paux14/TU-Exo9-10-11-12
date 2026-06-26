@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="mediacity.service.PretServiceTest" time="1.886" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="mediacity.service.PretServiceTest" time="1.733" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,9 +16,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Ulysse\AppData\Local\Temp\surefire534673134629783400\surefirebooter-20260626125806282_3.jar C:\Users\Ulysse\AppData\Local\Temp\surefire534673134629783400 2026-06-26T12-58-05_792-jvmRun1 surefire-20260626125806282_1tmp surefire_0-20260626125806282_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Ulysse\AppData\Local\Temp\surefire3496885921037128991\surefirebooter-20260626140715329_3.jar C:\Users\Ulysse\AppData\Local\Temp\surefire3496885921037128991 2026-06-26T14-07-15_077-jvmRun1 surefire-20260626140715329_1tmp surefire_0-20260626140715329_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="PretServiceTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Ulysse\Downloads\TU Exo9-10\Exercice 14\target\test-classes;C:\Users\Ulysse\Downloads\TU Exo9-10\Exercice 14\target\classes;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\Ulysse\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\Ulysse\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Ulysse\.m2\repository\org\mockito\mockito-junit-jupiter\5.13.0\mockito-junit-jupiter-5.13.0.jar;C:\Users\Ulysse\.m2\repository\org\mockito\mockito-core\5.13.0\mockito-core-5.13.0.jar;C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar;C:\Users\Ulysse\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Ulysse\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ulysse\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.0\cucumber-junit-platform-engine-7.18.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite\1.11.0\junit-platform-suite-1.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-api\1.11.0\junit-platform-suite-api-1.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.11.0\junit-platform-suite-engine-1.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.11.0\junit-platform-suite-commons-1.11.0.jar;C:\Users\Ulysse\.m2\repository\org\junit\platform\junit-platform-launcher\1.11.0\junit-platform-launcher-1.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Ulysse"/>
@@ -32,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Ulysse\AppData\Local\Temp\surefire534673134629783400\surefirebooter-20260626125806282_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ulysse\AppData\Local\Temp\surefire3496885921037128991\surefirebooter-20260626140715329_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS"/>
@@ -62,19 +61,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="listerPrets_retourneTousLesPrets" classname="mediacity.service.PretServiceTest" time="1.747">
+  <testcase name="listerPrets_retourneTousLesPrets" classname="mediacity.service.PretServiceTest" time="1.613">
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Ulysse\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="retournerOuvrage_troisiemeRetard_suspendLadherent" classname="mediacity.service.PretServiceTest" time="0.021"/>
-  <testcase name="creerPret_adherentSuspenduApres3Retards_nePouvantPlusEmprunter" classname="mediacity.service.PretServiceTest" time="0.01"/>
+  <testcase name="retournerOuvrage_troisiemeRetard_suspendLadherent" classname="mediacity.service.PretServiceTest" time="0.02"/>
+  <testcase name="creerPret_adherentSuspenduApres3Retards_nePouvantPlusEmprunter" classname="mediacity.service.PretServiceTest" time="0.008"/>
   <testcase name="retournerOuvrage_pretIntrouvable_leveException" classname="mediacity.service.PretServiceTest" time="0.007"/>
   <testcase name="retournerOuvrage_dansLesDelais_penaliteNulle" classname="mediacity.service.PretServiceTest" time="0.008"/>
-  <testcase name="creerPret_ouvrageIndisponible_leveException" classname="mediacity.service.PretServiceTest" time="0.019"/>
-  <testcase name="creerPret_ouvrageDisponible_creeLePreet" classname="mediacity.service.PretServiceTest" time="0.01"/>
-  <testcase name="creerPret_adherentSuspendu_leveException" classname="mediacity.service.PretServiceTest" time="0.005"/>
+  <testcase name="creerPret_ouvrageIndisponible_leveException" classname="mediacity.service.PretServiceTest" time="0.014"/>
+  <testcase name="creerPret_ouvrageDisponible_creeLePreet" classname="mediacity.service.PretServiceTest" time="0.008"/>
+  <testcase name="creerPret_adherentSuspendu_leveException" classname="mediacity.service.PretServiceTest" time="0.004"/>
   <testcase name="retournerOuvrage_avecRetard_calculePenalite" classname="mediacity.service.PretServiceTest" time="0.005"/>
 </testsuite>

@@ -1,2 +1,4 @@
+mediacity\bdd\CucumberRunnerTest.class
 mediacity\service\PretServiceTest.class
 mediacity\service\ReservationServiceTest.class
+mediacity\bdd\steps\ReservationStepDefinitions.class

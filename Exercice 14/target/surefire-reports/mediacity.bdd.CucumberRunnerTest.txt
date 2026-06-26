@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: mediacity.service.PretServiceTest
+Test set: mediacity.bdd.CucumberRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.733 s -- in mediacity.service.PretServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.657 s -- in mediacity.bdd.CucumberRunnerTest
