@@ -1,9 +1,11 @@
 mediacity\model\Reservation.class
+mediacity\exception\OuvrageDejaDisponibleException.class
 mediacity\MediaCityApplication.class
 mediacity\model\Adherent.class
 mediacity\repository\PretRepository.class
 mediacity\model\Ouvrage.class
 mediacity\exception\PretIntrouvableException.class
+mediacity\service\ReservationService.class
 mediacity\exception\AdherentSuspenduException.class
 mediacity\exception\OuvrageIndisponibleException.class
 mediacity\repository\OuvrageRepository.class
